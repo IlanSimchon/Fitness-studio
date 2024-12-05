@@ -1,4 +1,4 @@
-Error: Client must be at least 18 years old to register
+Error: entities.Client must be at least 18 years old to register
 Error: The client is already registered
 Error: Registration is required before attempting to unregister
 Error: Instructor is not qualified to conduct this session type.
@@ -30,13 +30,13 @@ Registered client: Nofar to session: Pilates on 2025-01-23T10:00 for price: 60
 Failed registration: Session is not in the future
 Registered client: Nofar to session: ThaiBoxing on 2025-01-01T14:00 for price: 100
 Registered client: Yuval to session: ThaiBoxing on 2025-01-01T14:00 for price: 100
-Failed registration: Client doesn't meet the age requirements for this session (Seniors)
+Failed registration: entities.Client doesn't meet the age requirements for this session (Seniors)
 Failed registration: Session is not in the future
-Failed registration: Client's gender doesn't match the session's gender requirements
-Failed registration: Client doesn't have enough balance
+Failed registration: entities.Client's gender doesn't match the session's gender requirements
+Failed registration: entities.Client doesn't have enough balance
 Failed registration: Session is not in the future
-Failed registration: Client's gender doesn't match the session's gender requirements
-Failed registration: Client doesn't have enough balance
+Failed registration: entities.Client's gender doesn't match the session's gender requirements
+Failed registration: entities.Client doesn't have enough balance
 Registered client: Nofar to session: Ninja on 2025-01-14T20:00 for price: 150
 Registered client: Maayan to session: Ninja on 2025-01-14T20:00 for price: 150
 Registered client: Shachar to session: Ninja on 2025-01-14T20:00 for price: 150
@@ -52,24 +52,24 @@ A new secretary has started working at the gym: Maayan
 
 Nofar Notifications: [The instructor will be a few minutes late for the session, Heavy traffic reported around the gym today. Plan ahead to avoid missing your session!, Happy New Year to all our valued clients!]
 
----Gym information---
-Gym Name: CrossFit
-Gym Secretary: ID: 1113 | Name: Maayan | Gender: Female | Birthday: 21-12-2005 | Age: 19 | Balance: 50 | Role: Secretary | Salary per Month: 8000
-Gym Balance: 1010
+---management.Gym information---
+management.Gym Name: CrossFit
+management.Gym management.Secretary: ID: 1113 | Name: Maayan | enums.Gender: Female | Birthday: 21-12-2005 | Age: 19 | Balance: 50 | Role: management.Secretary | Salary per Month: 8000
+management.Gym Balance: 1010
 
 Clients Data:
-ID: 1112 | Name: Nofar | Gender: Female | Birthday: 03-07-1998 | Age: 26 | Balance: 890
-ID: 1114 | Name: Shachar | Gender: Female | Birthday: 09-04-1958 | Age: 66 | Balance: 290
-ID: 1115 | Name: Yuval | Gender: Female | Birthday: 23-05-1976 | Age: 48 | Balance: 580
-ID: 1116 | Name: Noam | Gender: Male | Birthday: 20-12-1984 | Age: 40 | Balance: 170
-ID: 1117 | Name: Neta | Gender: Male | Birthday: 12-02-1993 | Age: 31 | Balance: 450
-ID: 1118 | Name: Rom | Gender: Female | Birthday: 12-12-1999 | Age: 25 | Balance: 1600
+ID: 1112 | Name: Nofar | enums.Gender: Female | Birthday: 03-07-1998 | Age: 26 | Balance: 890
+ID: 1114 | Name: Shachar | enums.Gender: Female | Birthday: 09-04-1958 | Age: 66 | Balance: 290
+ID: 1115 | Name: Yuval | enums.Gender: Female | Birthday: 23-05-1976 | Age: 48 | Balance: 580
+ID: 1116 | Name: Noam | enums.Gender: Male | Birthday: 20-12-1984 | Age: 40 | Balance: 170
+ID: 1117 | Name: Neta | enums.Gender: Male | Birthday: 12-02-1993 | Age: 31 | Balance: 450
+ID: 1118 | Name: Rom | enums.Gender: Female | Birthday: 12-12-1999 | Age: 25 | Balance: 1600
 
 Employees Data:
-ID: 1114 | Name: Shachar | Gender: Female | Birthday: 09-04-1958 | Age: 66 | Balance: 290 | Role: Instructor | Salary per Hour: 70 | Certified Classes: ThaiBoxing, MachinePilates
-ID: 1115 | Name: Yuval | Gender: Female | Birthday: 23-05-1976 | Age: 48 | Balance: 580 | Role: Instructor | Salary per Hour: 90 | Certified Classes: ThaiBoxing, Pilates, MachinePilates
-ID: 1116 | Name: Noam | Gender: Male | Birthday: 20-12-1984 | Age: 40 | Balance: 170 | Role: Instructor | Salary per Hour: 50 | Certified Classes: Pilates, Ninja
-ID: 1113 | Name: Maayan | Gender: Female | Birthday: 21-12-2005 | Age: 19 | Balance: 50 | Role: Secretary | Salary per Month: 8000
+ID: 1114 | Name: Shachar | enums.Gender: Female | Birthday: 09-04-1958 | Age: 66 | Balance: 290 | Role: Instructor | Salary per Hour: 70 | Certified Classes: ThaiBoxing, MachinePilates
+ID: 1115 | Name: Yuval | enums.Gender: Female | Birthday: 23-05-1976 | Age: 48 | Balance: 580 | Role: Instructor | Salary per Hour: 90 | Certified Classes: ThaiBoxing, Pilates, MachinePilates
+ID: 1116 | Name: Noam | enums.Gender: Male | Birthday: 20-12-1984 | Age: 40 | Balance: 170 | Role: Instructor | Salary per Hour: 50 | Certified Classes: Pilates, Ninja
+ID: 1113 | Name: Maayan | enums.Gender: Female | Birthday: 21-12-2005 | Age: 19 | Balance: 50 | Role: management.Secretary | Salary per Month: 8000
 
 Sessions Data:
 Session Type: Pilates | Date: 23-01-2025 10:00 | Forum: All | Instructor: Yuval | Participants: 1/30
